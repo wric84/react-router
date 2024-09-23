@@ -8,7 +8,7 @@ export default function ProfilePage(){
     const userData = users.find(user => user.id == id)
     console.log(userData);
 
-   
+    if (!userData) return <h1>Profile Not Found!</h1>
     
     return(
         <main>
